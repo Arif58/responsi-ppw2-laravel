@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="content">
-    <form method="post" action="/tempat" enctype="multipart/form-data">
+    <form method="post" action="{{ route('tempat.store') }}" enctype="multipart/form-data">
         @csrf
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">Nama Tempat</label>
