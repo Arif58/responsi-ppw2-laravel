@@ -28,7 +28,7 @@ class TempatMakanController extends Controller
             'no_telp'=>'required',
             'waktu_operasional'=>'required',
             // 'foto'=>'image|file|max:1024',
-        ]);
+        ]); 
 
         $tmpt_mkn = new TempatMakan;
         $tmpt_mkn->nama_tempat = $request->nama_tempat;

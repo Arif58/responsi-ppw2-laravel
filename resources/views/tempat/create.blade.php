@@ -23,7 +23,7 @@
             </div>
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">Waktu Operasional</label>
-                <input type="text" name="nama_tempat" class="form-control" placeholder="ex: 18.00-23.00 (Mon-Sun)">
+                <input type="text" name="waktu_operasional" class="form-control" placeholder="ex: 18.00-23.00 (Mon-Sun)">
             </div>
             <div class="mb-3 w-50">
                 <label for="foto" class="form-label">Upload Foto</label>
