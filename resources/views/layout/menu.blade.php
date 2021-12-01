@@ -1,21 +1,27 @@
-<div class="sidebar-wrapper">
+  <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="/dashboard/mainDashboard">
+            <a href="/dashboard">
               <i class="nc-icon nc-bank"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li>
-            <a href="/lokasi/index">
-              <i class="nc-icon nc-diamond"></i>
-              <p>Lokasi</p>
+            <a href="/lokasi">
+              <i class="fas fa-globe-asia"></i>
+              <p>Daftar Kota</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
-              <i class="nc-icon nc-pin-3"></i>
-              <p>Maps</p>
+            <a href="/tempat">
+              <i class="fas fa-utensils"></i>
+              <p>Daftar Tempat</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fas fa-sign-out-alt"></i>
+              <p>Logout</p>
             </a>
           </li>
           <!-- <li>

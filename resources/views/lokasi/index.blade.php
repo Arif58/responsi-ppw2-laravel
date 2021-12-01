@@ -15,7 +15,7 @@
               <div class="card-body text-center">
                 <div class="table-responsive">
                   <table class="table">
-                    <thead class=" text-primary">
+                    <thead class="text-primary">
                       <th>
                         No
                       </th>
@@ -25,19 +25,39 @@
                       <th>
                         Nama Kota
                       </th>
+                      <th>
+                        Aksi
+                      </th>
                     </thead>
                     <tbody>
+                      @foreach($location as $loc)
                       <tr>
                         <td>
-                          1
+                          {{ ++$no }}
                         </td>
                         <td>
-                          Niger
+                          <img src="{{ asset('storage/'.$loc->foto) }}" class="img-fluid mt-3" style="width: 150px; height:80px;">   
                         </td>
                         <td>
-                          Oud-Turnhout
+                          {{ $loc->nama_kota}}
+                        </td>
+                        <td class="d-flex justify-content-center align-items-center flex-wrap" style="padding: 41px 0px;">
+                            <div class="me-3">
+                                <form action="{{ route('lokasi.destroy', $loc->id) }}" method="post">
+                                @csrf
+                                    <button class="btn btn-danger" onClick="return confirm('Yakin mau dihapus?')">
+                                        Hapus
+                                    </button>
+                                </form>
+                            </div>
+                            <div>
+                                <a class="btn btn-warning" href="{{ route('lokasi.edit', $loc->id) }}">
+                                    Edit
+                                </a>
+                            </div>                        
                         </td>
                       </tr>
+                      @endforeach
                     </tbody>
                   </table>
                 </div>

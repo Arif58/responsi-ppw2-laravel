@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="content">
-    <form method="post" action="#" enctype="multipart/form-data">
+    <form method="post" action="{{ route('lokasi.store') }}" enctype="multipart/form-data">
         @csrf
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">Nama Kota</label>
@@ -11,7 +11,7 @@
             <div class="mb-3 w-50">
                 <label for="foto" class="form-label">Upload Cover</label>
                 <img class="img-preview img-fluid mb-3 mx-auto">
-                <input type="file" id="image" name="foto" class="form-control d-block @error('image') is-invalid @enderror" onchange="previewImage()">
+                <input type="file" id="image" name="foto" class="form-control d-block @error('foto') is-invalid @enderror" onchange="previewImage()">
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
             <a class="btn btn-danger" href="/lokasi">Batal</a>
