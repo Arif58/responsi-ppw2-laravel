@@ -8,7 +8,7 @@ class TempatMakan extends Model
 {
     protected $table = 'tempat_makan';
 
-    public function locations(){
+    public function places(){
         return $this->belongsTo('App\Lokasi', 'id_lokasi', 'id');
     }
 }
