@@ -43,6 +43,8 @@ Route::get('/tempat/edit/{id}', 'TempatMakanController@edit')->name('tempat.edit
 
 Route::get('/tempat/{id}', 'TempatMakanController@update')->name('tempat.update');
 
+Route::get('/list_tempat/{nama_kota}', 'FrontEndController@listempat')->name('list.tempat');
+
 // ROUTE LOGIN
 Route::get('/login', 'LoginController@index');
 

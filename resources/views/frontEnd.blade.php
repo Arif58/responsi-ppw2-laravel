@@ -54,7 +54,7 @@
     <!-- Header Section End --> 
 
     <!-- Services Section Start -->
-    <section id="services" class="section">
+    <!-- <section id="services" class="section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Our Services</h2>
@@ -118,7 +118,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Services Section End -->
 
     <!-- Portfolio Section -->
@@ -136,17 +136,18 @@
           <div class="col-lg-4 col-md-6 col-xs-12 mix development print">
             <div class="portfolio-item">
               <div class="shot-item">
+                <a class="lightbox" href="{{ route('list.tempat', $loc->lokasi_seo) }}">
                 <img src="{{ asset('storage/'.$loc->foto) }}" style="width: 520px; height: 240px;">   
                 <div class="single-content">
                   <div class="fancy-table">
                     <div class="table-cell">
                       <div class="zoom-icon">
-                        <a class="lightbox" href="img/portfolio/img-1.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                        <h2><font color="white"><strong>{{ $loc->nama_kota }}</strong></h2></font>
                       </div>
-                      <a href="#">View Project</a>
                     </div>
                   </div>
                 </div>
+                </a>
               </div>               
             </div>
           </div>

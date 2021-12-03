@@ -54,4 +54,6 @@ class LokasiController extends Controller
         $location->update();
         return redirect('/lokasi');
     }
+
+
 }

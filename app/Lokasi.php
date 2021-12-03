@@ -8,7 +8,7 @@ class Lokasi extends Model
 {
     protected $table = 'lokasi';
 
-    public function places(){
+    public function locations(){
         return $this->hasMany('App\TempatMakan', 'id_lokasi', 'id');
     }
 }
