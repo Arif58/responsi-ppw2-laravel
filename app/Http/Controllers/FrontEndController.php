@@ -10,13 +10,13 @@ use App\TempatMakan;
 class FrontEndController extends Controller
 {
     public function index(){
-        $location = Lokasi::all();
+        $location = Lokasi::orderBy('id', 'desc')->get();
         return view('frontEnd', compact('location'));
     }
 
     public function listempat($nama_kota){
         $locs = Lokasi::where('lokasi_seo', $nama_kota)->first();
-        $plcs = $locs->locations()->orderBy('id','desc');
+        $plcs = $locs->locations()->orderBy('id', 'desc')->get();
         return view('list_tempat.index', compact('locs', 'plcs'));
     
     }

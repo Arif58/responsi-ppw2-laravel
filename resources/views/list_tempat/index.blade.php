@@ -1,10 +1,11 @@
 @extends('layout_depan.template')
 @section('content')
+       <!-- Blog Section -->
+    <section id="blog" class="section">
       <!-- Container Starts -->
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title">Daftar Tempat</h2>
-          <span>Blogs</span>
+          <h2 class="section-title"> Tempat Makan di {{ $locs->nama_kota }}</h2>
           <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
         </div>
         <div class="row">
@@ -13,13 +14,12 @@
             <!-- Blog Item Starts -->
             <div class="blog-item-wrapper">
               <div class="blog-item-img">
-                <a href="#">
-                  <img src="{{ asset('storage/'.$data->foto) }}">
+                <a href="single-post.html">
+                  <img src="{{ asset('storage/'.$data->foto) }}" style="width: 350px; height: 231px;">
                 </a>                
               </div>
               <div class="blog-item-text"> 
-                <div class="date"><i class="lni-calendar"></i>10 April, 2018</div>
-                <h3><a href="single-post.html">10 Tips to Design a High-converting Landing Page</a></h3>
+                <h3><a href="#">{{ $data->nama_tempat }}</a></h3>
                 <div class="meta-tags">
                   <span><a href="#"><i class="lni-eye"></i> 4.5k Views</a></span>
                   <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
@@ -32,4 +32,6 @@
           @endforeach
         </div>
       </div>
+    </section>
+    <!-- blog Section End -->
 @endsection
