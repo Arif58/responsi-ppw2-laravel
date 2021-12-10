@@ -6,9 +6,15 @@ use Illuminate\Http\Request;
 use App\DetailTempat;
 use App\TempatMakan;
 use App\Lokasi;
+use App\Http\Controllers\Middleware\Authenticate;
 
 class DetailTempatController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+        $this->middleware('admin');
+    }
+    
     public function index(){
         $batas = 7;
         $detail = DetailTempat::orderBy('id', 'desc')->paginate($batas);

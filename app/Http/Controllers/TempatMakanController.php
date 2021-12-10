@@ -9,6 +9,11 @@ use Illuminate\Support\Str;
 
 class TempatMakanController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+        $this->middleware('admin');
+    }
+    
     public function index(){
         $batas = 5;
         $tmpt_mkn = TempatMakan::orderBy('id','desc')->paginate($batas);

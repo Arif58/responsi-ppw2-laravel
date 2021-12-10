@@ -8,6 +8,11 @@ use App\Lokasi;
 
 class LokasiController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+        $this->middleware('admin');
+    }
+    
     public function index(){
         $batas = 7;
         $location = Lokasi::orderBy('id', 'desc')->paginate($batas);
