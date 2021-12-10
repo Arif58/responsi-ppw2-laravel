@@ -106,7 +106,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   bottom: -8px;
   width: 80px;
   height: 2px;
-  background: #F97794;
+  /* background: #F97794; */
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s;

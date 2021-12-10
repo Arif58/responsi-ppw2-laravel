@@ -136,7 +136,8 @@
           <div class="col-lg-4 col-md-6 col-xs-12 mix development print">
             <div class="portfolio-item">
               <div class="shot-item">
-                <a class="lightbox" href="{{ route('list.tempat', $loc->lokasi_seo) }}">
+                <!-- ngapus class="lightbox" -->
+                <a href="{{ route('list.tempat', $loc->lokasi_seo) }}">
                 <img src="{{ asset('storage/'.$loc->foto) }}" style="width: 520px; height: 240px;">   
                 <div class="single-content">
                   <div class="fancy-table">

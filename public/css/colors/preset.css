@@ -20,9 +20,9 @@ a:hover{
 #carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i{
 	background: #F97794;
 }
-.section-header .section-title:before{
+/* .section-header .section-title:before{
 	background: #F97794;
-}
+} */
 .overlay{
 	background: #F97794;
 }

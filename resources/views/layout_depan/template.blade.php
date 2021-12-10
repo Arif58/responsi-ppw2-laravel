@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/lightbox.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/line-icons.css">
     <link rel="stylesheet" href="/css/owl.carousel.css">
@@ -72,6 +73,7 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
     
   </body>
 </html>
