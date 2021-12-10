@@ -11,4 +11,8 @@ class TempatMakan extends Model
     public function places(){
         return $this->belongsTo('App\Lokasi', 'id_lokasi', 'id');
     }
+
+    public function detailtempat(){
+        return $this->hasMany('App\DetailTempat', 'id_tempat', 'id');
+    }
 }

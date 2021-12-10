@@ -23,13 +23,10 @@
                         Kota
                       </th>
                       <th>
-                        Foto
-                      </th>
-                      <th>
                         Nama Tempat
                       </th>
                       <th>
-                        No Telpon
+                        Foto
                       </th>
                       <th>
                         Aksi
@@ -45,26 +42,23 @@
                           {{ $tmpt->places->nama_kota }}
                         </td>
                         <td>
-                          <img src="{{ asset('storage/'.$tmpt->foto) }}" class="img-fluid mt-3" style="width: 150px; height:80px;">   
-                        </td>
-                        <td>
                           {{ $tmpt->nama_tempat }}
                         </td>
                         <td>
-                          {{ $tmpt->no_telp }}
+                          <img src="{{ asset('storage/'.$tmpt->foto) }}" class="img-fluid mt-3" style="width: 150px; height:80px;">   
                         </td>
                         <td class="d-flex justify-content-center align-items-center flex-wrap" style="padding: 41px 0px;">
                             <div class="me-3">
-                                <form action="#" method="post">
+                                <form action="{{ route('tempat.destroy', $tmpt->id) }}" method="post">
                                 @csrf
                                     <button class="btn btn-danger" onClick="return confirm('Yakin mau dihapus?')">
-                                        Hapus
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                 </form>
                             </div>
                             <div>
-                                <a class="btn btn-warning" href="#">
-                                    Edit
+                                <a class="btn btn-warning" href="{{ route('tempat.edit', $tmpt->id) }}">
+                                  <i class="far fa-edit"></i>
                                 </a>
                             </div>                        
                         </td>

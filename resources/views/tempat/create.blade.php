@@ -17,14 +17,7 @@
                     @endforeach
                 </select>
             </div>
-            <div class="mb-3 w-50">
-                <label for="inputJudul" class="form-label">No.Telp</label>
-                <input type="text" name="no_telp" class="form-control">
-            </div>
-            <div class="mb-3 w-50">
-                <label for="inputJudul" class="form-label">Waktu Operasional</label>
-                <input type="text" name="waktu_operasional" class="form-control" placeholder="ex: 18.00-23.00 (Mon-Sun)">
-            </div>
+            
             <div class="mb-3 w-50">
                 <label for="foto" class="form-label">Upload Foto</label>
                 <img class="img-preview img-fluid mb-3 mx-auto">
@@ -39,8 +32,8 @@
                     const imgPreview = document.querySelector('.img-preview');
 
                     imgPreview.style.display = "block";
-                    imgPreview.style.height = "200px";
-                    imgPreview.style.width = "180px";
+                    // imgPreview.style.height = "200px";
+                    // imgPreview.style.width = "180px";
 
                     const oFReader = new FileReader();
                     oFReader.readAsDataURL(image.files[0]);

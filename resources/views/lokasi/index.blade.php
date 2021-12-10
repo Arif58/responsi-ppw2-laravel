@@ -46,13 +46,13 @@
                                 <form action="{{ route('lokasi.destroy', $loc->id) }}" method="post">
                                 @csrf
                                     <button class="btn btn-danger" onClick="return confirm('Yakin mau dihapus?')">
-                                        Hapus
+                                      <i class="fas fa-trash-alt"></i>
                                     </button>
                                 </form>
                             </div>
                             <div>
                                 <a class="btn btn-warning" href="{{ route('lokasi.edit', $loc->id) }}">
-                                    Edit
+                                  <i class="far fa-edit"></i>
                                 </a>
                             </div>                        
                         </td>

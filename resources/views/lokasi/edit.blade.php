@@ -21,8 +21,8 @@
         const imgPreview = document.querySelector('.img-preview');
 
         imgPreview.style.display = "block";
-        imgPreview.style.height = "200px";
-        imgPreview.style.width = "180px";
+        // imgPreview.style.height = "200px";
+        // imgPreview.style.width = "180px";
 
         const oFReader = new FileReader();
         oFReader.readAsDataURL(image.files[0]);

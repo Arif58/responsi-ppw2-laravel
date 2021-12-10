@@ -25,20 +25,38 @@ class TempatMakanController extends Controller
         $this->validate($request,[
             'nama_tempat'=>'required',
             'id_lokasi'=>'required',
-            'no_telp'=>'required',
-            'waktu_operasional'=>'required',
             // 'foto'=>'image|file|max:1024',
         ]); 
 
         $tmpt_mkn = new TempatMakan;
         $tmpt_mkn->nama_tempat = $request->nama_tempat;
-        $tmpt_mkn->no_telp = $request->no_telp;
-        $tmpt_mkn->waktu_operasional = $request->waktu_operasional;
         $tmpt_mkn->id_lokasi = $request->id_lokasi;
         $tmpt_mkn->tempat_makan_seo = Str::slug($request->nama_tempat, '-');
         $tmpt_mkn->foto = $request->file('foto')->store('post-images');
         $tmpt_mkn->save();
         return redirect('/tempat');
         
+    }
+
+    public function destroy($id) {
+        $tmpt_mkn = TempatMakan::find($id);
+        $tmpt_mkn->delete();
+        return redirect('/tempat');
+    }
+
+    public function edit($id) {
+        $tmpt_mkn = TempatMakan::find($id);
+        $locs = Lokasi::all();
+        return view('tempat.edit', compact('tmpt_mkn', 'locs'));
+    }
+
+    public function update(Request $request, $id){
+        $tmpt_mkn = TempatMakan::find($id);
+        $tmpt_mkn->nama_tempat = $request->nama_tempat;
+        $tmpt_mkn->id_lokasi = $request->id_lokasi;
+        $tmpt_mkn->tempat_makan_seo = Str::slug($request->nama_tempat, '-');
+        $tmpt_mkn->foto = $request->file('foto')->store('post-images');
+        $tmpt_mkn->update();
+        return redirect('/tempat');
     }
 }

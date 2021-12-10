@@ -15,10 +15,16 @@ class CreateDetailTempatTable extends Migration
     {
         Schema::create('detail_tempat', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_lokasi');
-            $table->foreign('id_lokasi')->references('id')->on('lokasi')->onDelete('cascade');
-            $table->string('alamat');
-            $table->string('')
+            $table->unsignedBigInteger('id_kota');
+            $table->foreign('id_kota')->references('id')->on('lokasi')->onDelete('cascade');
+            $table->unsignedBigInteger('id_tempat');
+            $table->foreign('id_tempat')->references('id')->on('tempat_makan')->onDelete('cascade');
+            $table->string('no_telp');
+            $table->string('waktu_operasional');
+            $table->string('alamat')->nullable();
+            $table->string('link_maps')->nullable();
+            $table->string('menu')->nullable();
+            $table->string('review')->nullable();
             $table->timestamps();
         });
     }

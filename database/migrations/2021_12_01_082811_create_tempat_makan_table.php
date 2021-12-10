@@ -16,8 +16,6 @@ class CreateTempatMakanTable extends Migration
         Schema::create('tempat_makan', function (Blueprint $table) {
             $table->id();
             $table->string('nama_tempat');
-            $table->string('no_telp');
-            $table->string('waktu_operasional');
             $table->unsignedBigInteger('id_lokasi');
             $table->foreign('id_lokasi')->references('id')->on('lokasi')->onDelete('cascade');
             $table->timestamps();

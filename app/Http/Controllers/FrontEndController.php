@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Lokasi;
 use App\TempatMakan;
+use App\DetailTempat;
 
 class FrontEndController extends Controller
 {
@@ -20,4 +21,14 @@ class FrontEndController extends Controller
         return view('list_tempat.index', compact('locs', 'plcs'));
     
     }
+    public function detailtmpt($nama_tempat){
+        $tmpt = TempatMakan::where('tempat_makan_seo', $nama_tempat)->first();
+        $ket = $tmpt->detailtempat()->orderBy('id', 'desc')->get();
+        return view('frontEnd_detailtmpt.index', compact('tmpt', 'ket'));
+    
+    }
+
+
+
+
 }
