@@ -7,7 +7,7 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Essence - Bootstrap 4 Template</title>
+    <title>Boomberg</title>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 
@@ -35,7 +35,7 @@
       
       <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
         <div class="container">          
-          <a class="navbar-brand" href="/"><span class="lni-bulb"></span>ESSENCE</a>
+          <a class="navbar-brand" href="/"><span><img src="/images/boomberg.png" style="height: 35px;"></span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -58,7 +58,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/color-switcher.js"></script>
+    <!-- <script src="js/color-switcher.js"></script> -->
     <script src="js/jquery.mixitup.js"></script>
     <script src="js/nivo-lightbox.js"></script>
     <script src="js/owl.carousel.js"></script>    

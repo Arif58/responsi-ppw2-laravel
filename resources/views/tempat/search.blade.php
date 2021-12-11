@@ -1,6 +1,7 @@
 @extends('layout.template')
 @section('content')
     <div class="content">
+
         <div class="row">
           <div class="col-md-2 offset-md-9">
             <a class="btn btn-secondary" href="{{ route('tempat.create') }}"><p>Tambah Tempat</p></a>
@@ -8,10 +9,9 @@
           <div class="col-md-10 mx-auto">
             <div class="card">
               <div class="card-header mx-auto">
-                <h4 class="card-title">Tempat Makan</h4>
-                  
-                
-              </div>
+                <h4 class="card-title">Tempat Makan</h4>    
+            </div>
+            
               <div class="card-body text-center">
                 <div class="table-responsive">
                   <table class="table">
@@ -66,6 +66,13 @@
                       @endforeach
                     </tbody>
                     <div class="container-fluid">{{ $tmpt_mkn->links() }}</div>
+                    <div class="justify-content-center">
+                        @if(count($tmpt_mkn))
+                            <div class="alert alert-primary">Ditemukan <strong>{{count($tmpt_mkn)}}</strong> data dengan kata: <strong>{{ $cari }}</strong></div>
+                        @else
+                            <div class="alert alert-danger">Data <strong>{{ $cari }}</strong> tidak ditemukan</div>
+                        @endif 
+                    </div>
                     <div class="navbar navbar-light">
                       <div class="container-fluid">
                         <form action="{{ route('tempat.search') }}" method="get">
@@ -75,6 +82,7 @@
                         </form>
                       </div>
                     </div>
+                    
                   </table>
                 </div>
               </div>

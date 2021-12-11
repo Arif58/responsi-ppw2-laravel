@@ -159,6 +159,76 @@
     </section>
     <!-- Portfolio Section Ends --> 
 
+    <div id="subscribe" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="subscribe-form">
+              <div class="form-wrapper">
+                <div class="sub-title text-center">
+                  <h3>Rekomendasi Tempat Makan</h3>
+                  <p>Silahkan rekomendasikan tempat makan favorite kalian!</p>
+                </div>
+                <form action="rivaldyarief@mail.ugm.ac.id" method="post" enctype="text/plain">
+                  <div class="row">
+                    <div class="col-12 form-line mb-2">
+                      <div class="form-group">
+                        <input type="text" class="form-control rounded" name="email" placeholder="Lokasi Tempat Makan">
+                      </div>
+                    </div>
+                    <div class="col-md-12 form-line mb-2">
+                      <div class="form-group">
+                        <input type="text" class="form-control rounded" name="phone" placeholder="Nama Tempat">
+                      </div>
+                    </div>
+                    <div class="col-12 form-line mb-3">
+                      <div class="form-group">
+                        <input type="email" class="form-control rounded" name="email" placeholder="Email">
+                      </div> 
+                    </div>
+                    <div class="col-12">
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn-common btn-effect">Kirim Rekomendasi</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="sub-item-box">
+              <div class="icon-box">
+                <i class="lni-bullhorn"></i>
+              </div>
+              <div class="text-box">
+                <h4>Weekly Free Learning Materials</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, laborum libero beatae obcaecati.</p>
+              </div>
+            </div>
+            <div class="sub-item-box">
+              <div class="icon-box">
+                <i class="lni-book"></i>
+              </div>
+              <div class="text-box">
+                <h4>Free PDF to Get Started</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, laborum libero beatae obcaecati.</p>
+              </div>
+            </div>
+            <div class="sub-item-box">
+              <div class="icon-box">
+                <i class="lni-timer"></i>
+              </div>
+              <div class="text-box">
+                <h4>10% Instant Discount</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, laborum libero beatae obcaecati.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
     <!-- Footer Section Start -->
     <footer>
       <!-- Footer Area Start -->
@@ -166,12 +236,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <h3>Essence</h3>
+              <h3>Boomberg</h3>
               <div class="textwidget">
-                <p>If you think you have the passion, 
-                attitude and capability to join us 
-                the next big software company
-                s so that we can get the convers.</p>
+                <p>Boomberg memudahkan kamu dalam mencari dan menemukan tempat makan favorite di seluruh Indonesia.</p>
               </div>
               <ul class="footer-social">
                 <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
@@ -184,11 +251,9 @@
               <div class="widget">
                 <h3 class="block-title">Short Link</h3>
                 <ul class="menu">
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Wishlist</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Advance Sarch</a></li>
-                  <li><a href="#">Site Map</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#portfolios">Tempat Popular</a></li>
+                  <li><a href="#subscribe">Rekomendasi</a></li>
                 </ul>
               </div>
             </div>
@@ -197,30 +262,18 @@
                 <h3 class="block-title">Contact Us</h3>
                 <ul class="contact-footer">
                   <li>
-                    <strong>Address :</strong> <span>1900 Pico Blvd, New York br Centernial, colorado</span>
+                    <strong>Address :</strong> <span>Bulaksumur, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta</span>
                   </li>
                   <li>
-                    <strong>Phone :</strong> <span>+48 123 456 789</span>
+                    <strong>Phone :</strong> <span>+62895610769630</span>
                   </li>
                   <li>
-                    <strong>E-mail :</strong> <span><a href="#">info@example.com</a></span>
+                    <strong>E-mail :</strong> <span><a href="#">Boomberg@gmail.com</a></span>
                   </li>
                 </ul> 
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-              <div class="widget">
-                <h3 class="block-title">Instagram</h3>
-                <ul class="instagram-footer">
-                  <li><a href="#"><img src="img/instagram/insta1.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="img/instagram/insta2.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="img/instagram/insta3.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="img/instagram/insta4.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="img/instagram/insta5.jpg" alt=""></a></li>
-                  <li><a href="#"><img src="img/instagram/insta6.jpg" alt=""></a></li>
-                </ul>
-              </div>
-            </div>
+        
           </div>
         </div>
       </section>

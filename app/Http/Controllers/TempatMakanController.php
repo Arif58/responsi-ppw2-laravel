@@ -15,7 +15,7 @@ class TempatMakanController extends Controller
     }
     
     public function index(){
-        $batas = 5;
+        $batas = 2;
         $tmpt_mkn = TempatMakan::orderBy('id','desc')->paginate($batas);
         $no = $batas * ($tmpt_mkn->currentPage() - 1);
         return view('tempat.index', compact('tmpt_mkn', 'no'));
@@ -63,5 +63,13 @@ class TempatMakanController extends Controller
         $tmpt_mkn->foto = $request->file('foto')->store('post-images');
         $tmpt_mkn->update();
         return redirect('/tempat');
+    }
+
+    public function search(Request $request){
+        $batas = 5;
+        $cari = $request->kata;
+        $tmpt_mkn = TempatMakan::where('nama_tempat', 'like', "%".$cari."%")->paginate($batas);
+        $no = $batas * ($tmpt_mkn->currentPage() - 1);
+        return view('tempat.search', compact('cari', 'tmpt_mkn', 'no'));
     }
 }

@@ -15,10 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'FrontEndController@index');
 
-Route::get('/list_tempat/{nama_kota}', 'FrontEndController@listempat')->name('list.tempat');
-
-Route::get('/detail_tempat/{nama_tempat}', 'FrontEndController@detailtmpt')->name('detail.tempat');
-
 Route::get('/dashboard', 'LokasiController@index');
 
 // ROUTE LOKASI
@@ -47,6 +43,10 @@ Route::get('/tempat/edit/{id}', 'TempatMakanController@edit')->name('tempat.edit
 
 Route::post('/tempat/{id}', 'TempatMakanController@update')->name('tempat.update');
 
+Route::get('/tempat/search', 'TempatMakanController@search')->name('tempat.search');
+
+Route::get('/list_tempat/{nama_kota}', 'FrontEndController@listempat')->name('list.tempat');
+
 
 
 // ROUTE DETAIL TEMPAT
@@ -65,6 +65,10 @@ Route::post('/detail_tempat/delete/{id}', 'DetailTempatController@destroy')->nam
 Route::get('/detail_tempat/edit/{id}', 'DetailTempatController@edit')->name('detail.edit');
 
 Route::post('/detail_tempat/{id}', 'DetailTempatController@update')->name('detail.update');
+
+Route::get('/detail_tempat/{nama_tempat}', 'FrontEndController@detailtmpt')->name('detail.tempat');
+
+Route::post('/detail_tempat/{id}', 'ReviewController@store')->name('review.store');
 
 // ROUTE LOGIN
 Route::get('/login', 'LoginController@index')->middleware('guest');

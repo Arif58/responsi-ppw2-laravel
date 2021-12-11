@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use App\Lokasi;
 use App\TempatMakan;
 use App\DetailTempat;
+use App\Review;
 
 class FrontEndController extends Controller
 {
@@ -24,7 +25,8 @@ class FrontEndController extends Controller
     public function detailtmpt($nama_tempat){
         $tmpt = TempatMakan::where('tempat_makan_seo', $nama_tempat)->first();
         $ket = $tmpt->detailtempat()->orderBy('id', 'desc')->get();
-        return view('frontEnd_detailtmpt.index', compact('tmpt', 'ket'));
+        $review = Review::where('tempat_id', $tmpt->id)->orderBy('id', 'desc')->get();
+        return view('frontEnd_detailtmpt.index', compact('tmpt', 'ket', 'review'));
     
     }
 

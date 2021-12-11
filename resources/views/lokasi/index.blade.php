@@ -59,6 +59,7 @@
                       </tr>
                       @endforeach
                     </tbody>
+                    <div>{{ $location->links() }}</div>
                   </table>
                 </div>
               </div>

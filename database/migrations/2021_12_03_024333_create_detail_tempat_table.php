@@ -24,7 +24,6 @@ class CreateDetailTempatTable extends Migration
             $table->string('alamat')->nullable();
             $table->string('link_maps')->nullable();
             $table->string('menu')->nullable();
-            $table->string('review')->nullable();
             $table->timestamps();
         });
     }

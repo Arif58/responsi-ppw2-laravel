@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
 
 
 //Inject Necessary Styles and HTML
-jQuery('head').append('<link rel="stylesheet" id="colors" href="css/colors/preset.css" type="text/css" />');
+jQuery('head').append('<link rel="stylesheet" id="colors" href="css/colors/.css" type="text/css" />');
 jQuery('head').append('<link rel="stylesheet" href="css/color-switcher.css" type="text/css" />'); 
 
 jQuery('body').append('' + 
