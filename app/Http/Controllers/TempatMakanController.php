@@ -15,7 +15,7 @@ class TempatMakanController extends Controller
     }
     
     public function index(){
-        $batas = 2;
+        $batas = 5;
         $tmpt_mkn = TempatMakan::orderBy('id','desc')->paginate($batas);
         $no = $batas * ($tmpt_mkn->currentPage() - 1);
         return view('tempat.index', compact('tmpt_mkn', 'no'));

@@ -23,23 +23,24 @@
             </div>
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">No.Telp</label>
-                <input type="text" name="no_telp" class="form-control" value="">
+                <input type="text" name="no_telp" class="form-control" value="{{ $detail->no_telp }}">
             </div>
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">Waktu Operasional</label>
-                <input type="text" name="waktu_operasional" class="form-control" placeholder="ex: 18.00-23.00 (Mon-Sun)" value="">
+                <input type="text" name="waktu_operasional" class="form-control" placeholder="ex: 18.00-23.00 (Mon-Sun)" value="{{ $detail->waktu_operasional }}">
             </div>
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">Alamat</label>
-                <input type="text" name="alamat" class="form-control">
+                <input type="text" name="alamat" class="form-control" value="{{ $detail->alamat }}">
             </div>
             <div class="mb-3 w-50">
                 <label for="inputJudul" class="form-label">Link GMaps</label>
-                <input type="text" name="link_maps" class="form-control">
+                <input type="text" name="link_maps" class="form-control" value="{{ $detail->link_maps }}">
             </div>
             <div class="mb-3 w-50">
                 <label for="menu" class="form-label">Upload Foto Menu</label>
-                <img class="img-preview img-fluid mb-3 mx-auto">
+                
+                <img src="{{ asset('storage/'.$detail->menu) }}" class="img-preview img-fluid mb-3 mx-auto">
                 <input type="file" id="image" name="menu" class="form-control d-block @error('foto') is-invalid @enderror" onchange="previewImage()">
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>

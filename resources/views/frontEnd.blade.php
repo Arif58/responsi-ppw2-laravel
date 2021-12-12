@@ -7,29 +7,29 @@
           <ol class="carousel-indicators">
             <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-slider" data-slide-to="1"></li>
-            <li data-target="#carousel-slider" data-slide-to="2"></li>
+            <!-- <li data-target="#carousel-slider" data-slide-to="2"></li> -->
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img src="img/slider/bg-1.jpg" alt="">
+              <img src="/images/makanan.jfif" style="width: 100%; height: 650px;">
               <div class="carousel-caption text-left">
-                <h3 class="wow fadeInRight" data-wow-delay="0.2s">Handcrafted</h1>  
-                <h2 class="wow fadeInRight" data-wow-delay="0.4s">Bootstrap 4 Template</h2>
-                <h4 class="wow fadeInRight" data-wow-delay="0.6s">Comes with All Essential Sections & Elements</h4>
-                <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="0.9s">Download</a>
-                <a href="#" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.2s">Get Started!</a>
+                <!-- <h3 class="wow fadeInRight" data-wow-delay="0.2s"></h1>   -->
+                <h2 class="wow fadeInRight" data-wow-delay="0.4s">100++ Tempat Makan</h2>
+                <h4 class="wow fadeInRight" data-wow-delay="0.6s">Memudahkan Anda Mencari Tempat Makan Terenak</h4>
+                <!-- <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="0.9s">Download</a> -->
+                <!-- <a href="#portfolios" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.2s">Get Started!</a> -->
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/slider/bg-3.jpg" alt="">
+              <img src="/images/kota.jpg" style="width: 100%; height: 650px;">
               <div class="carousel-caption text-center">
-                <h3 class="wow fadeInDown" data-wow-delay="0.3s">Bundled With Tons of</h3>
-                <h2 class="wow bounceIn" data-wow-delay="0.6s">Cutting-edge Features</h2> 
-                <h4 class="wow fadeInUp" data-wow-delay="0.9s">Parallax, Video, Product, Premium Addons and More...</h4>
-                <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInUp" data-wow-delay="1.2s">View Works</a>
+                <h3 class="wow fadeInDown" data-wow-delay="0.3s">Tempat Popular di</h3>
+                <h2 class="wow bounceIn" data-wow-delay="0.6s">Indonesia</h2> 
+                <h4 class="wow fadeInUp" data-wow-delay="0.9s">Cafe, Restaurant, Jajanan Pasar, Makanan Kaki Lima</h4>
+                <a href="#portfolios" class="btn btn-lg btn-common btn-effect wow fadeInUp" data-wow-delay="1.2s">Lihat Tempat</a>
               </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <img src="img/slider/bg-2.jpg" alt="">
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInDown" data-wow-delay="0.3s">Ready For</h3>
@@ -37,7 +37,7 @@
                 <h4 class="wow fadeInUp" data-wow-delay="0.6s">App, Business, SaaS and Landing Pages</h4>
                 <a href="#" class="btn btn-lg btn-border wow fadeInUp" data-wow-delay="0.9s">Purchase</a>
               </div>
-            </div>
+            </div> -->
           </div>
           <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
             <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-left"></i></span>
@@ -159,7 +159,7 @@
     </section>
     <!-- Portfolio Section Ends --> 
 
-    <div id="subscribe" class="section">
+    <!-- <div id="subscribe" class="section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5 col-md-12 col-xs-12">
@@ -196,38 +196,9 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-lg-6 col-md-12 col-xs-12">
-            <div class="sub-item-box">
-              <div class="icon-box">
-                <i class="lni-bullhorn"></i>
-              </div>
-              <div class="text-box">
-                <h4>Weekly Free Learning Materials</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, laborum libero beatae obcaecati.</p>
-              </div>
-            </div>
-            <div class="sub-item-box">
-              <div class="icon-box">
-                <i class="lni-book"></i>
-              </div>
-              <div class="text-box">
-                <h4>Free PDF to Get Started</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, laborum libero beatae obcaecati.</p>
-              </div>
-            </div>
-            <div class="sub-item-box">
-              <div class="icon-box">
-                <i class="lni-timer"></i>
-              </div>
-              <div class="text-box">
-                <h4>10% Instant Discount</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, laborum libero beatae obcaecati.</p>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Footer Section Start -->
     <footer>

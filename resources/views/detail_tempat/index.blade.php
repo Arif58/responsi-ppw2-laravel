@@ -64,6 +64,7 @@
                       </tr>
                       @endforeach
                     </tbody>
+                    <div class="container-fluid">{{ $detail->links() }}</div>
                   </table>
                 </div>
               </div>
