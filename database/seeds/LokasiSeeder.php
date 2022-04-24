@@ -20,13 +20,14 @@ class LokasiSeeder extends Seeder
         ]);
 
         Lokasi::create([
+            'id' => '2',
             'foto' => 'post-images/lOr4bS5cwjlGHnNorpAIVHHqtpFFRBrKr5es8CUH.jpg',
             'nama_kota' => 'Bandung',
             'lokasi_seo' => 'bandung'
         ]);
 
         Lokasi::create([
-            'id' => '2',
+            'id' => '3',
             'foto' => 'post-images/xaLBh3SU4H6noyLoIgrlYjuGswFsHDFCY0809S2J.jpg',
             'nama_kota' => 'Jakarta',
             'lokasi_seo' => 'jakarta'
