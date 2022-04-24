@@ -28,10 +28,6 @@ class DetailTempatController extends Controller
         return view('detail_tempat.create', compact('kota'));
     }
 
-    // public function getKota(){
-
-    //     return view('detail_tempat.create', compact('kota'));
-    // }
 
     public function getTempat($id){
         $tempat = TempatMakan::where("id_lokasi", $id)->pluck("nama_tempat", "id");
@@ -61,18 +57,13 @@ class DetailTempatController extends Controller
         return view('detail_tempat.view', compact('detail'));
     }
 
+    
     public function destroy($id) {
         $detail = DetailTempat::find($id);
         $detail->delete();
         return redirect('/detail_tempat');
     }
 
-    public function edit($id) {
-        $detail = DetailTempat::find($id);
-        $kota = Lokasi::pluck("nama_kota", "id");
-        $tempat = TempatMakan::where("id_lokasi", $id)->pluck("nama_tempat", "id");
-        return view('detail_tempat.edit', compact('detail', 'kota', 'tempat'));
-    }   
 
 
 }

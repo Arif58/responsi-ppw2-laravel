@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\TempatMakan;
 use App\DetailTempat;
 use App\Review;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Middleware\Authenticate;
 
 class ReviewController extends Controller

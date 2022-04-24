@@ -15,10 +15,8 @@ class CreateReviewTable extends Migration
     {
         Schema::create('review', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
-            $table->unsignedBigInteger('tempat_id');
-            $table->foreign('tempat_id')->references('id')->on('tempat_makan')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('tempat_id')->constrained('tempat_makan')->onDelete('cascade');
             $table->text('comment');
             $table->timestamps();
         });

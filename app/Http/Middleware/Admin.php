@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class Admin
 {
@@ -16,7 +16,7 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        if(!(Auth::user()->email == 'admin@gmail.com')){
+        if(!(Auth::user()->level == 'admin')){
             return redirect()->back();
         }
         return $next($request);

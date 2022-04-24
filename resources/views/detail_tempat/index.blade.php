@@ -54,12 +54,7 @@
                                       <i class="fas fa-trash-alt"></i>
                                     </button>
                                 </form>
-                            </div>
-                            <div>
-                                <a class="btn btn-warning" href="{{ route('detail.edit', $data->id) }}">
-                                  <i class="far fa-edit"></i>
-                                </a>
-                            </div>                        
+                            </div>                  
                         </td>
                       </tr>
                       @endforeach

@@ -60,11 +60,11 @@ Route::post('/detail_tempat', 'DetailTempatController@store')->name('detail.stor
 
 Route::get('/detail_tempat/view/{id}', 'DetailTempatController@view')->name('detail.view');
 
+// Route::get('/detail_tempat/edit/{id}', 'DetailTempatController@edit')->name('detail.edit');
+
+// Route::post('/detail_tempat/{id}', 'DetailTempatController@update')->name('detail.update');
+
 Route::post('/detail_tempat/delete/{id}', 'DetailTempatController@destroy')->name('detail.destroy');
-
-Route::get('/detail_tempat/edit/{id}', 'DetailTempatController@edit')->name('detail.edit');
-
-Route::post('/detail_tempat/{id}', 'DetailTempatController@update')->name('detail.update');
 
 Route::get('/detail_tempat/{nama_tempat}', 'FrontEndController@detailtmpt')->name('detail.tempat');
 

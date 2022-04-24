@@ -6,7 +6,7 @@
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title"> Tempat Makan di {{ $locs->nama_kota }}</h2>
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
+          <p class="section-subtitle"></p>
         </div>
         <div class="row">
           @foreach($plcs as $data)
@@ -19,11 +19,6 @@
               </div>
               <div class="blog-item-text"> 
                 <h3>{{ $data->nama_tempat }}</h3>
-                <div class="meta-tags">
-                  <span><a href="#"><i class="lni-eye"></i> 4.5k Views</span>
-                  <span><a href="#"><i class="lni-bubble"></i> 07</a></span>
-                  <span><a href="#"><i class="lni-reply"></i> 332</a></span>
-                </div>
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->

@@ -6,7 +6,7 @@
             Welcome, {{ auth()->user()->name }}
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            @if(Auth::user()->email == 'admin@gmail.com')
+            @if(Auth::user()->level == 'admin')
             <li><a class="dropdown-item" href="/dashboard"><i class="far fa-list-alt"></i> Dashboard</a></li>
             <li><hr class="dropdown-divider"></li>
             @endif
